@@ -1,5 +1,7 @@
+import { MediaTypeEnum } from "@/components/Search/Enums/MediaTypeEnum";
+
 interface MovieResult {
-  media_type: "movie";
+  media_type: MediaTypeEnum;
   backdrop_path: string;
   id: number;
   title: string;
@@ -15,7 +17,7 @@ interface MovieResult {
 }
 
 interface PersonResult {
-  media_type: "person";
+  media_type: MediaTypeEnum;
   gender: number;
   id: number;
   known_for_department: string;
@@ -27,7 +29,7 @@ interface PersonResult {
 }
 
 interface TVResult {
-  media_type: "tv";
+  media_type: MediaTypeEnum;
   backdrop_path: string;
   genre_ids: Array<number>;
   id: number;

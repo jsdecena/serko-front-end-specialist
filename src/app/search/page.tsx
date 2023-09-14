@@ -16,6 +16,7 @@ export default async function StarredPage({
     searchParams.q as string,
     searchParams.page as string
   );
+  console.log(results, 'results!!!')
   return (
     <Container maxWidth="md">
       <TotalSearchResults searchParams={searchParams} />
