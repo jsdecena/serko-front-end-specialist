@@ -20,7 +20,7 @@ export const SearchResultItem = async ({
     case MediaTypeEnum.MOVIE:
       return <Movies mediaType={media_type} title={title} overview={overview} releaseDate={release_date} voteAverage={vote_average} genreIds={genre_ids} />
     case MediaTypeEnum.PERSON:
-      return <Person name={name} department={known_for_department} knownFor={known_for} />
+      return <Person name={name} department={known_for_department} knownFor={known_for} mediaType={media_type} />
     case MediaTypeEnum.TV:
       return <Tv name={name} overview={overview} firstAirDate={first_air_date} voteAverage={vote_average} genreIds={genre_ids} mediaType={media_type} />
     default:
